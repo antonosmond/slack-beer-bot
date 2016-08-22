@@ -1,0 +1,19 @@
+{
+  "name": "beerbot",
+  "version": "1.0.0",
+  "description": "Beer bot for Slack",
+  "main": "index.js",
+  "keywords": [
+    "slack",
+    "beer",
+    "bot"
+  ],
+  "author": "antonosmond@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "botkit": "^0.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.3.1"
+  }
+}
