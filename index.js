@@ -12,10 +12,8 @@ let controller = botkit.slackbot({
 
 controller.spawn({
   token: process.env.SLACK_API_TOKEN
-}).startRTM(function (err) {
-  if (err) {
-    throw new Error(err);
-  }
+}).startRTM(function(err) {
+  if (err) { throw err; }
 });
 
 controller.hears(["beer"], ["ambient"], function(bot, message) {
