@@ -23,9 +23,10 @@ controller.hears(["beer"], ["ambient"], function(bot, message) {
       return m.name !== "slackbot" && m.deleted === false && m.is_bot === false;
     });
     let user = members[Math.floor(Math.random() * members.length)];
+    let name = user.real_name ? user.real_name : `@${user.name}`;
     bot.reply(message, {
       username: "BeerBot",
-      text: `Yeah! ${user.real_name} said they're buying! :grinning:`,
+      text: `Yeah! ${name} said they're buying! :grinning:`,
       icon_emoji: ":beers:",
     });
   });
